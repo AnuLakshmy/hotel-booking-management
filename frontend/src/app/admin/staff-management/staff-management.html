@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <h3>Staff Management</h3>
+  
+    <table class="table table-bordered table-striped mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          
+          <th width="120">Action</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let staff of staffList">
+          <td>{{ staff.id }}</td>
+          <td>{{ staff.username }}</td>
+          
+          <td>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="deleteStaff(staff.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

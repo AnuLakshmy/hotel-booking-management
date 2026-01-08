@@ -1,0 +1,40 @@
+<div class="container mt-4">
+    <h2>Book Room</h2>
+
+    <div class="mb-3">
+      <label>Customer Name</label>
+      <input class="form-control" [(ngModel)]="booking.customerName">
+    </div>
+
+    <div class="mb-3">
+      <label>Email</label>
+      <input class="form-control" [(ngModel)]="booking.email">
+    </div>
+
+    <div class="mb-3">
+      <label>Room ID</label>
+      <input type="number" class="form-control" [(ngModel)]="booking.roomId">
+    </div>
+
+    <div class="mb-3">
+      <label>Booking Type</label>
+      <select class="form-control" [(ngModel)]="booking.bookingType">
+        <option value="Normal">Normal</option>
+        <option value="Premium">Premium</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label>Check-in</label>
+      <input type="date" class="form-control" [(ngModel)]="booking.checkInDate">
+    </div>
+
+    <div class="mb-3">
+      <label>Check-out</label>
+      <input type="date" class="form-control" [(ngModel)]="booking.checkOutDate">
+    </div>
+
+    <button class="btn btn-success" (click)="book()">
+      Confirm Booking
+    </button>
+  </div>

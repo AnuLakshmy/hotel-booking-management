@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="card shadow p-4">
+      <h3 class="text-center mb-4">Book Room</h3>
+
+      <div class="mb-3">
+        <label class="form-label">Room ID</label>
+        <input type="number" class="form-control"
+               [(ngModel)]="booking.roomId">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Check-in Date</label>
+        <input type="date" class="form-control"
+               [(ngModel)]="booking.checkInDate">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Check-out Date</label>
+        <input type="date" class="form-control"
+               [(ngModel)]="booking.checkOutDate">
+      </div>
+
+      <button class="btn btn-primary w-100" (click)="book()">
+        Book Now
+      </button>
+    </div>
+  </div>
